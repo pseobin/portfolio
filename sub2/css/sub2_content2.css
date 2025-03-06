@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/* 제품소개 콘텐츠 영역 */
+
+.content_area{width: 100%; background: url(../images/sub2_bg2.png) no-repeat; overflow: hidden;}
+.content_area .content_inner{width: 1400px; margin: 150px auto;  position: relative;}
+.content_area .content_inner li{margin: 40px 50px; transition: all .3s ease-out; }
+.content_area .content_inner li:hover{transform: scale(1.1);}
+.content_area .content_inner li img{border-radius: 30px;}
+.content_area .content_inner p:nth-child(1){font-size: 1.2rem; font-weight: 600; position: absolute; left: 80px; top: -30px;}
+.content_area .content_inner li p{font-size: 1.3rem; font-weight: bold; text-align: center; padding-top: 30px;}
+
+.content_area .content_inner .content_1{display: flex; }
+.content_area .content_inner .content_2{display: flex;}
+.content_area .content_inner .content_3{display: flex;}
+
+.content_area .modal_box{ position: fixed; left: 0; top: 0; z-index: 50; width: 100%; height: 100%; 
+    background: #000; opacity: .7; display: none;}
+.content_area  .popup{position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; width: 600px; height: 600px; background: #fff; 
+    z-index: 60; display:none; border-radius: 30px;}
+.content_area  .popup img{width: 500px; padding: 40px 50px 20px;}
+.content_area  .popup dl{width: 500px;  margin:0 auto; text-align: center;}
+.content_area  .popup dt{font-size: 1.2em; font-weight: bold; margin-bottom: 10px;}
+.content_area  .popup dd{text-align: center; font-weight: 500;  margin: 5px auto;}
+.content_area  .popup .close_btn{position: absolute; top: 30px; right: 30px; 
+    display: block; text-indent: -999px; overflow: hidden; width: 32px; 
+    height: 32px; padding: 9px 9px; background: url(../images/close.png) no-repeat;}

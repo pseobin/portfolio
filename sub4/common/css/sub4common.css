@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.visual{width: 2000px; height: 400px; position: relative; top: 0; left: 50%; 
+    transform: translateX(-50%); background: url(../../common/images/visual04.png); }
+.visual strong{font-size: 30px; color: #fff; position: absolute; top: 200px; left: 0; width: 100%; text-align: center; }
+
+
+
+
+/* 서브네비공통 */
+.sub_nav{width: 100%; border-bottom: 2px solid #ccc;}
+.sub_nav ul{width: 1200px; margin: 0 auto; display: flex;}
+.sub_nav ul li{width: 33.33%; text-align: center; box-sizing: border-box;}
+.sub_nav ul li a{font-size: 1,2rem; font-weight: bold; padding: 15px 0;}
+.sub_nav ul li a.current{color:#FF0076; border-bottom: 3px solid #FF0076;}
+
+
+
+
+/* title_area공통 */
+
+#content{width: 100%;}
+#content .title_area{width: 1400px; margin: 0 auto; position: relative; overflow: hidden;}
+#content .title_area .line_map{position: absolute; right: 20px; top: 20px; color: #666;}
+#content .title_inner{width: 1400px; height: 400px;}
+#content .title_inner h2{font-size: 60px; font-weight: bold; text-align: center; margin: 200px 0 30px;}
+#content .title_inner p{font-size: 1.2rem; text-align: center; margin-bottom: 100px; font-weight: 500;} 
+#content .title_inner p::after{content: ''; display: block; background:#FF0076; width: 3px; height: 150px;
+position: absolute; left: 700px; top: 450px;}
+#content .title_inner img{width: 145px; height: 70px; position: absolute;top: 130px; left: 625px; }
+
+

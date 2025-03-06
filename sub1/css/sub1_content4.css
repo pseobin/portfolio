@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/* 오시는 길 */
+
+.content_inner{width: 2000px; position: relative; top: 0; left: 50%; transform: translateX(-50%);}
+.content_inner #map1{width: 1400px; height: 600px; margin: 100px auto;}
+.content_inner .content_txt{width: 1100px;  margin: 150px auto;}
+.content_inner .content_txt table{line-height: 3rem;}
+.content_inner .content_txt table th{width: 300px; font-size: 1.2rem; color: #F23492;}
+.content_inner .content_txt table td{padding: 50px 20px; border-bottom: 3px solid #FFDFEE; }
+
+
+
+
+
+

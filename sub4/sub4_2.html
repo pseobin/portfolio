@@ -1,0 +1,128 @@
+<?
+    session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+
+    //$userid = $_SESSION['userid'];
+    //$username = $_SESSION['username'];
+    //$usernick = $_SESSION['usernick'];
+    //$userlevel = $_SESSION['userlevel'];
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해태이야기-해태캐릭터</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link rel="stylesheet" href="../common/css/aos.css">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub4common.css">
+    <link rel="stylesheet" href="./css/sub4_content2.css">
+</head>
+<body>
+    <div class="skipNav">
+        <a href="#content">본문 바로가기</a>
+        <a href="#gnb">글로벌 네비게이션 바로가기</a>
+    </div>
+
+    <div class="wrap">
+
+      <? include "../common/sub_header.html" ?>
+
+        <div class="visual">
+            <strong>해태이야기</strong>
+           </div>
+           <div class="sub_nav">
+               <ul>
+                   <li><a href="./sub4_1.html">해태소개</a></li>
+                   <li><a  class="current" href="./sub4_2.html">해태제과 캐릭터</a></li>
+                   <li><a href="./sub4_3.html">해태 연구소</a></li>
+                   
+               </ul>
+           </div>
+   
+           <article id="content">
+             <div class="title_area">
+                   <div class="line_map">
+                       home > 해태이야기 > <strong>해태제과 캐릭터</strong>
+                  </div>
+                   <div class="title_inner">
+                       <img src="../sub1/images/content1/ht_logo.png" alt="">
+                       <h2>해태제과 캐릭터</h2>
+                       <p>사랑스러운 해태제과의 캐릭터 매력에 푸욱 빠질 준비 되셨나요?</p>
+                   </div>
+               </div>
+               <div class="content_area">
+                <span>사랑스러운 해태제과의 대표 캐릭터를 소개합니다!</span>
+                <div class="content_inner">
+                     <div class="charbox">
+                      <div><img src="./images/content2/char01_x2.png" alt="link image"></div>
+                      <dl class="text">
+                        <dt class="title">티토</dt>
+                        <dd class="main_t"> 이상한 나라에 살고 있는 시계토끼 티토 꼼꼼한 성격으로 늘 시계를 들고 다닌다. 에이스의 대표 캐릭터이다.</dd>
+                      </dl>
+                     </div>
+                  
+                    <div class="gallery-thumbs">
+                      
+                      <ul>
+                        <li>
+                          <a href="#"><img src="./images/content2/char_icon1.png" alt=""></a>
+                        </li>
+                        <li>
+                          <a href="#"><img src="./images/content2/char_icon2.png" alt=""></a>
+                        </li>
+                        <li>
+                          <a href="#"><img src="./images/content2/char_icon3.png" alt=""></a>
+                        </li>
+                        <li>
+                          <a href="#"><img src="./images/content2/char_icon4.png" alt=""></a>
+                        </li>
+                        <li>
+                          <a href="#"><img src="./images/content2/char_icon5.png" alt=""></a>
+                        </li>
+                        <li>
+                          <a href="#"><img src="./images/content2/char_icon6.png" alt=""></a>
+                        </li>
+                      </ul>
+                    </div>
+              </div>
+ 
+             </div>
+ 
+         </article>
+         
+       <? include "../common/sub_footer.html" ?>
+
+    </div>
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<script src="../common/js/aos.js"></script>
+<script src="../common/js/jquery-1.12.4.min.js"></script>
+<script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+<script src="../common/js/jquery.easing.1.3.js"></script>
+<script src="../common/js/common.js"></script>
+
+ <script src="./js/img_change.js"></script>
+
+
+</body>
+</html>

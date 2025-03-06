@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/* 인사말 페이지 내용영역 */
+
+.content_area{width: 100%;}
+.content_area .content_inner{width: 2000px; height: 1300px; background: url(../images/content1/bg1.png);
+     position: relative; top: 0; left: 50%; transform: translateX(-50%); overflow: hidden;}
+.content_area .content_inner .ceo{width:600px; height: 636px; justify-content: center; float: left; margin-left: 350px; margin-top: 150px; } 
+.content_area .content_inner p{width: 600px; height: 700px; font-size: 1.1rem; margin-left: 1100px; margin-top: 400px; background: #FEF4F6;}
+
+.content_area .content_inner p img{mix-blend-mode: multiply;}

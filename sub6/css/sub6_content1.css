@@ -1,0 +1,15 @@
+.content_area{width: 1400px; margin: 0 auto;}
+.content_area>p{font-size: 1.5rem; font-weight: 700; text-align: center; line-height: 3rem; padding: 50px;}
+.contact{width: 1400px; padding: 50px 0; display: flex; justify-content: space-around;}
+.contact>div{margin-top: 100px;}
+#contact-form{width: 700px;}
+.contact label{font-size: 1.2rem; font-weight: 600; display: block; margin: 30px 0;}
+.contact input, .contact textarea{padding: 15px 5%; width: 90%; font-size: 1.5rem;
+     border: 0; background: #fff; color: #333 ;
+     border-radius: 10px; outline: none; box-shadow: 1px 1px 10px 1px rgba(0,0,0,.1); transition: all .5s;}
+.contact input:focus, .contact textarea:focus{box-shadow: 1px 1px 10px 1px rgba(0,0,0,.4); 
+    transform: scale(1.03);border:3px solid #df7baa ;}     
+.contact textarea{height: 400px; }
+.contact button{padding: 15px 50px;background: #EC2B84;
+   color: #fff; font-size: 1.3rem; border-radius: 15px;
+   border: 0; margin: 30px auto 0;display: block; cursor: pointer;} 
