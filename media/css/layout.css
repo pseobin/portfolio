@@ -43,7 +43,7 @@
 #content .about{width: 95%; margin:0 auto; padding: 80px 50px;}
 #content .about ul li{overflow: hidden;}
 #content .about ul li img{width: 100%;height: 100%; object-fit: cover;object-position: center; transition: all .5s;}
-#content .about ul li:hover img{transform: scale(1.05); filter: contrast(150%);}
+#content .about ul li:hover img{transform: scale(1.05);}
 #content .about ul li .about_tit{ display: flex; }
 #content .about ul li .about_tit h3{font-size: 2rem; padding: 20px; margin-right: 20px; }
 #content .about ul li .about_tit a{ font-size: .7rem; color: #fff; padding: 20px; transition: all .3s;}
@@ -102,7 +102,7 @@
 .palace #text{text-align: center;}
 .palace #text dt{font-size: 1.3rem; font-weight: 600; margin-bottom: 15px;}
 .palace #text dd{font-size: 1rem;}
-.palace p{width: 60%; margin: 0 auto; line-height: 2rem;} 
+.palace p{width: 60%; margin: 0 auto; text-align: center; line-height: 2rem;} 
 .swiper-container {width: 75%; padding-top: 90px; padding-bottom: 80px; }
 .swiper-slide {background-position: center; background-size: cover; width: 450px; height: 550px;}
 .swiper-pagination-bullet-active{background: #fff;}
@@ -119,7 +119,7 @@
 .hours-admission .hours_img{width: 50%;}
 .hours-admission .hours_con{width: 47%; margin-top: 40px;}
 .hours-admission ul li:nth-of-type(2){flex-direction: row-reverse;}
-.hours-admission .hours_con dl dd{padding: 30px 0 10px; border-bottom: 1px solid #fff;}
+.hours-admission .hours_con dl dd{padding: 30px 0 10px; border-bottom: 1px solid rgba(255,255,255,.4);}
 
 .hours-admission .hours_img img{width: 100%; height:100% ; object-fit: cover; object-position: center;}
 
@@ -133,7 +133,7 @@
 #content .gallery .gallery_tit h3{font-size: 2rem;}
 #content .gallery .gallery_tit a{font-size: .7rem; color: #fff; transition: all .3s; margin: 20px 0 0 30px;}
 #content .gallery .gallery_tit a:hover{color: #D9B360;}
-#content .gallery>p{line-height: 2rem; margin: 0 10% 50px; text-align: justify; word-break: break-all;}
+#content .gallery>p{line-height: 2rem; margin: 0 10% 50px; text-align: center; word-break: break-all;}
 #content .gallery ul li{position: relative;overflow: hidden;}
 #content .gallery ul li img{width: 100%;height: 100%; object-fit: cover;object-position: center;object-position:center;transition: all .5s;}
 #content .gallery ul li:hover img{transform: scale(1.1);}
@@ -205,8 +205,8 @@
 @media screen and (max-width:1024px) {  
 
    #content .about{ padding: 30px 5px;}
+   #content .about ul li .about_tit h3{font-size: 1.5rem;} 
 
-   
    .exhibitionr_box{height: auto;}
    .exhibitionr{position: static; height: auto; overflow: hidden;}
    .exhibitionr_left{position: static; width: auto;}
@@ -220,6 +220,7 @@
    .exhibitionr_right ul li:nth-of-type(5){display: none;}
    .exhibitionr_left .sp2{display: none;}
 
+   .palace .palace_tit h3{font-size: 1.5rem;}
    .palace p{text-align: center;} 
    .palace p span{display: none;}
    .swiper-container {width: 95%;}
@@ -230,9 +231,8 @@
 
 }
 
-/* 소형 테블릿 */
-@media screen and (max-width:768px) {
-
+@media screen and (max-width:900px) {
+   
    #content .about{padding: 40px 0;}
    #content .about ul li:nth-of-type(6) p{display: none;}
    #content .about ul li:nth-of-type(4){display: none;}
@@ -241,6 +241,13 @@
       grid-template-areas:
           'b a a '
           'b c e ';}
+
+}
+
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+
   
    .exhibitionr_left p{margin: 0 2% 50px;}
    .exhibitionr_right ul{ grid-template-columns:repeat(2, 1fr); grid-auto-rows:300px ; gap: 150px 15px;}
@@ -312,6 +319,11 @@
 #content .gallery ul li:nth-of-type(6){display: none;}
 #content .gallery{padding: 30px 10px;}
 #content .gallery .gallery_tit a{margin: 40px 0 0 30px;}
+}
+
+@media screen and (max-width:500px) {
+   #content .gallery>p {margin: 0 0 20px 0;}
+           
 }
 
 

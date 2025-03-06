@@ -100,17 +100,18 @@ div,section{box-sizing: border-box;}
 	
     
 }
+@media screen and (max-width:1050px) {#headerArea .menuOpen{ display:block;}}
 
 /* 테블릿 */
 @media screen and (max-width:1024px) {
    #wrap{width:100%; overflow: hidden;}
 
-   #headerArea .menuOpen{ display:block;}
+   
    #headerArea #gnb{float:none; width:100%; margin: 0; background:#000; display:none; position:absolute; top:0; left:0;}
    #headerArea #gnb ul{margin-top: 100px;}
    #headerArea #gnb ul li{float:none; margin:40px; text-align:center }
    #headerArea #gnb ul li a{display: block;font-size: 1em;}
-   #headerArea #gnb ul li a:hover{color: #b66c36;}
+   #headerArea #gnb ul li a:hover{color: #D9B360;}
    
    #footerArea .footer_inner .footer_con .footer_left img{margin: 20px 0 ;}
    #footerArea .footer_inner .footer_con .footer_left{display: block;}

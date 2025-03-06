@@ -124,7 +124,7 @@
 
 /* 모바일 */
 @media screen and (max-width:640px) {
-
+	.feature .inWrap .History_tit>span {font-size: 1.5rem;}
 
 }
 
