@@ -1,0 +1,154 @@
+#content{width: 100%;background: rgba(0, 0, 0, .9); color: #fff;}
+#content .about_con{width: 95%; margin:0 auto; padding: 150px 30px;}
+#content .about_con ul li{overflow: hidden;}
+#content .about_con ul li:nth-of-type(1){padding-top: 50px;}
+#content .about_con ul li img{width: 100%;height: auto; object-fit: cover;object-position: center; transition: all .5s;}
+#content .about_con ul li:hover img{transform: scale(1.05); filter: contrast(120%);}
+#content .about_con ul p{font-size: .9rem;  line-height: 2rem; padding: 10px; text-align: justify; word-break: break-all;}
+#content .about_con ul{width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+	grid-template-areas:
+		'a a b c'
+		'd e e f';}
+		
+#content .about_con ul li:nth-of-type(1){grid-area: a;}
+#content .about_con ul li:nth-of-type(2){grid-area: b;}
+#content .about_con ul li:nth-of-type(3){grid-area: c;}
+#content .about_con ul li:nth-of-type(4){grid-area: d;}
+#content .about_con ul li:nth-of-type(5){grid-area: e;}
+#content .about_con ul li:nth-of-type(6){grid-area: f;}
+
+
+#content .re_tit_img{width:100%;height: 300px; background: url(../images/content1/sub1_big.png) no-repeat center center;
+    background-attachment: fixed; margin: 50px auto;}
+
+
+.feature{padding: 100px 30px;}
+.feature .inWrap .History_tit{width: 80%; margin: 0 auto;}
+.feature .inWrap .History_tit>span{font-size: 2rem; text-align: center; display: block; margin-bottom: 30px;}
+.feature .inWrap .History_tit p{font-size: .9rem; line-height: 2rem; padding: 50px 0; text-align: justify; word-break: break-all;}
+.feature .fInner{margin: 0 auto; width: 90%; overflow: hidden; }
+
+
+
+.feature .swiper-slide{width: auto; height: 400px;}
+.feature .swiper-slide img{width: 100%; height: auto; object-fit: cover; object-position: center;}
+
+.feature .swiper-pagination {
+	position: relative;
+	margin-top: 30px;
+}
+.feature .swiper-pagination-progress .swiper-pagination-progressbar{
+	background: rgba(255, 255, 255, 1);
+}
+
+.swiper-pagination {
+	right: 3.8%;
+	left: auto;
+	width: auto;
+
+	 .swiper-pagination-bullet {
+		 width: 5vw;
+		 height: 3px;
+		 border-radius: 20px;
+		 background:#fff;
+		 opacity: 1;
+		 transition: width 0.3s ease;
+	 }
+	 
+	 .swiper-pagination-bullet-active {
+		 background:  #b66c36;
+	 }
+	 .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+	   width: 1vw;
+   }
+ }
+
+ @media screen and (max-width:1620px) {
+	#content .about_con ul p:nth-of-type(2){display: none;}
+
+ }
+ @media screen and (max-width:1320px) {
+	#content .about_con ul p:nth-of-type(1) span{display: none;}
+	#content .re_tit_img{height: 200px;}
+	#content .about_con{padding: 100px 10px;}
+	.feature{padding: 80px 10px;}
+
+ }
+
+@media screen and (max-width:1120px) {
+	#content .about_con ul{
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas:
+			'a a b'
+			'd e e';}
+	#content .about_con ul li:nth-of-type(3){display: none;}
+	#content .about_con ul li:nth-of-type(6){display: none;}
+	#content .about_con ul p:nth-of-type(1) span{display: block;}
+	.feature .inWrap .History_tit p span{display:none}
+
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+	#content .about_con ul p:nth-of-type(1) span{display: none;}
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+	#content .about_con ul p{font-size: .7rem; padding: 0;}
+	#content .about_con ul{
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas:
+			'b c d f '
+			'a a a a'
+			'e e e e';}
+		#content .about_con ul li:nth-of-type(3){display: block;}
+		#content .about_con ul li:nth-of-type(6){display: block;}
+
+		#content .about_con ul li:nth-of-type(1){padding-top: 0;}
+
+	.feature .inWrap .History_tit p{font-size: .7rem;}
+
+	.feature .button div{
+		width: 40px;
+		height: 40px;
+	}
+	.feature .button div a {
+		background-size: 20px 20px;
+	}
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+
+
+}
+
+/* 소형 모바일 */
+@media screen and (max-width:480px) {
+
+	.feature .fInner {
+		width: 95%;
+	}
+	.feature li {
+		width: 140px; height: 210px;
+	}
+	.feature li span {
+		font-size: 1.1667em;
+	}
+	.feature .button {
+		display: none;
+	}
+	
+}
+
+
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+	
+}

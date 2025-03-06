@@ -1,0 +1,217 @@
+#content{width: 100%; background: rgba(0,0,0,.8); color: #fff;}
+#content .palace{width: 98%; gap: 3%; margin: 0 auto; padding: 150px 20px;}
+.tabs{width:96%; margin: 0 auto;}  
+.tabs .tab_menu{overflow: hidden; display: flex; justify-content: center; gap: 150px;}
+
+.tabs a.tab{font-size: 1.3rem; font-weight: 600;color: #ccc; padding: 80px 0; transition: all .3s;} 
+.tabs .contlist {display: none; padding:15px;line-height:1.5em; padding: 100px 0;} 
+.tabs .contlist h3{font-size: 20px; font-weight: bold; margin-bottom: 15px;} 
+
+/* 루브르 */
+#content .palace .contlist .louvre_con {width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+	grid-template-areas:
+		'a a b c'
+		'a a d e'
+		'f f g g'
+		'f f g g';}
+		
+#content .palace .contlist .louvre_con li:nth-of-type(1){grid-area: a;}
+#content .palace .contlist .louvre_con li:nth-of-type(2){grid-area: b;}
+#content .palace .contlist .louvre_con li:nth-of-type(3){grid-area: c;}
+#content .palace .contlist .louvre_con li:nth-of-type(4){grid-area: d;}
+#content .palace .contlist .louvre_con li:nth-of-type(5){grid-area: e;}
+#content .palace .contlist .louvre_con li:nth-of-type(6){grid-area: f;}
+#content .palace .contlist .louvre_con li:nth-of-type(7){grid-area: g;}
+
+#content .palace .contlist .louvre_con li{overflow: hidden;}
+#content .palace .contlist .louvre_con li img{width: 100%; height: auto; object-fit: cover; object-position: center; transition: all .5s;}
+#content .palace .contlist .louvre_con li:hover img{transform: scale(1.05);}
+#content .palace .contlist .louvre_con li>p{text-align: center; font-size: 1rem; font-weight: 100; padding-top: 40px;}
+#content .palace .contlist .louvre_con li div p{font-size: 3vw; line-height: 5vw; font-weight: 100; text-align: center; transition: all .5s;}
+#content .palace .contlist .louvre_con li div:hover p{color: #b66c36;}
+#content .palace .contlist .louvre_con li div p:nth-of-type(1){margin-top: 60px;}
+
+
+/* 국립 박물관 */
+
+#content .palace .contlist .delacroix_con {width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+	grid-template-areas:
+		'a c '
+		'b c ';}
+		
+#content .palace .contlist .delacroix_con li:nth-of-type(1){grid-area: a;}
+#content .palace .contlist .delacroix_con li:nth-of-type(2){grid-area: b;}
+#content .palace .contlist .delacroix_con li:nth-of-type(3){grid-area: c;}
+
+
+#content .palace .contlist .delacroix_con li img{width: 100%; height: auto; object-fit: cover; object-position: center;}
+#content .palace .contlist .delacroix_con li:nth-of-type(1) p{font-size: 2rem; font-weight: 600; color: #b66c36;}
+#content .palace .contlist .delacroix_con li p{font-size: 1rem; font-weight: 100; padding-top: 40px;}
+
+/* 정원 */
+
+#content .palace .contlist .tuileries_con{width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+	grid-template-areas:
+		'a b c c'
+		'd e c c'
+		'f f g g'
+		'f f h h';}
+		
+#content .palace .contlist .tuileries_con li:nth-of-type(1){grid-area: a;}
+#content .palace .contlist .tuileries_con li:nth-of-type(2){grid-area: b;}
+#content .palace .contlist .tuileries_con li:nth-of-type(3){grid-area: c; padding: 40px;}
+#content .palace .contlist .tuileries_con li:nth-of-type(4){grid-area: d;}
+#content .palace .contlist .tuileries_con li:nth-of-type(5){grid-area: e;}
+#content .palace .contlist .tuileries_con li:nth-of-type(6){grid-area: f;}
+#content .palace .contlist .tuileries_con li:nth-of-type(7){grid-area: g;}
+#content .palace .contlist .tuileries_con li:nth-of-type(8){grid-area: h;}
+
+#content .palace .contlist .tuileries_con li{overflow: hidden;}
+#content .palace .contlist .tuileries_con li img{width: 100%; height: auto; object-fit: cover; object-position: center; transition: all .5s;}
+#content .palace .contlist .tuileries_con li:hover img{transform: scale(1.05);}
+#content .palace .contlist .tuileries_con li>p{font-size: 1rem; font-weight: 100; padding-top: 30px;}
+#content .palace .contlist .tuileries_con li div p{font-size: 3vw; line-height: 5vw; font-weight: 100; text-align: center; transition: all .3s;}
+#content .palace .contlist .tuileries_con li div:hover p{color: #b66c36;}
+#content .palace .contlist .tuileries_con li div p:nth-of-type(1){margin-top: 60px;}
+
+
+@media screen and (max-width:1500px) {
+	#content .palace .contlist .delacroix_con li:nth-of-type(1) p{font-size: 1.5rem; padding: 0; margin-bottom: 30px;}
+	#content .palace .contlist .delacroix_con li p{padding-top: 30px;}
+}
+@media screen and (max-width:1340px) {
+	#content .palace .contlist .delacroix_con {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-areas:
+			'a'
+			'c'
+			'b';}
+	#content .palace .contlist .delacroix_con li p{text-align: center;}
+	#content .palace .contlist .delacroix_con li:nth-of-type(1) p{margin-bottom: 80px;}
+
+}
+
+
+@media screen and (max-width:1240px) {
+ 
+	.tabs a.tab{font-size: 1.1rem;}
+	.tabs .tab_menu{gap: 90px;}
+	#content .palace .contlist .louvre_con li>p{padding-top: 15px; font-size: .8rem;}
+
+	#content .palace .contlist .tuileries_con {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas:
+			'a a c c'
+			'd b c c'
+			'f f c c'
+			'f f h h';}
+
+	#content .palace .contlist .tuileries_con li:nth-of-type(3){margin-top: 100px;}
+	#content .palace .contlist .tuileries_con li:nth-of-type(5){display: none;}
+	#content .palace .contlist .tuileries_con li:nth-of-type(7){display: none;}
+	#content .palace .contlist .tuileries_con li div{display: flex;}
+	#content .palace .contlist .tuileries_con li div p{color: #b66c36; font-weight: 700;}
+	#content .palace .contlist .tuileries_con li div p:nth-of-type(1){margin: 0 30px 0; }
+	
+	
+	
+
+}
+@media screen and (max-width:1140px) {
+	#content .palace .contlist .louvre_con {
+		grid-template-columns: repeat(4,1fr);
+		grid-template-areas:
+			'b b c d'
+			'f f a a';}
+			
+	#content .palace .contlist .louvre_con li:nth-of-type(5){display: none;}
+	#content .palace .contlist .louvre_con li:nth-of-type(7){display: none;}
+	#content .palace .contlist .louvre_con li>p{text-align: left;}
+	#content .palace .contlist .louvre_con li div p:nth-of-type(1){margin-top: 0; margin-right: 20px;}
+	#content .palace .contlist .louvre_con li div{display: flex; padding-top: 40px; }
+	#content .palace .contlist .louvre_con li div p{color: #b66c36; font-weight: 700;}
+
+	#content .palace .contlist .tuileries_con li:nth-of-type(8){display: none;}
+	#content .palace .contlist .tuileries_con li:nth-of-type(3){margin-top:50px;}
+	#content .palace .contlist .tuileries_con li div{padding: 30px;}
+	#content .palace .contlist .tuileries_con {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas:
+			'a a c c'
+			'd b c c'
+			'f f c c'
+			'f f c c';}
+
+
+}
+@media screen and (max-width:1024px) {
+     #content .palace .contlist .louvre_con {
+		grid-template-columns: repeat(3,1fr);
+		grid-template-areas:
+			'b b b'
+			'a c d'
+			'f f f';}
+	#content .palace .contlist .louvre_con li>p{ text-align:center; padding-top: 30px;}
+	#content .palace .contlist .louvre_con li div{justify-content: center; padding: 0; margin: 30px;}
+	.tabs .contlist {padding:20px 0;}
+}
+
+@media screen and (max-width:970px) {
+	#content .palace .contlist .louvre_con li div p{font-size:2rem;}
+	.tabs a.tab{font-size: 1.05rem;}
+	.tabs .tab_menu{gap: 20px;}
+
+	#content .palace .contlist .tuileries_con li div p{font-size: 1.5rem;}
+	#content .palace .contlist .tuileries_con li:nth-of-type(3){font-size: .7rem;}
+	#content .palace .contlist .tuileries_con li>p {padding-top: 20px;}
+
+
+}
+
+
+@media screen and (max-width:800px) {
+	.tabs .tab_menu{display: block; text-align: center;margin-bottom: 50px;}
+	.tabs a.tab{padding: 10px 0; color: #666; background: rgba(255,255,255,.6); border-radius: 15px;margin:0 30px 5px;}
+
+		
+	#content .palace .contlist .louvre_con li div p{font-size:1.5rem;}
+
+	#content .palace .contlist .tuileries_con li:nth-of-type(3){margin: 0;}
+	#content .palace .contlist .tuileries_con li{text-align: center;} 
+	#content .palace .contlist .tuileries_con li div{justify-content: center;}
+	#content .palace .contlist .tuileries_con {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:
+			'a a'
+			'd b'
+			'c c'
+			'f f';}
+}
+
+@media screen and (max-width:640px) {
+	.tabs a.tab{margin:0 0 5px;}
+
+	#content .palace .contlist .louvre_con{
+		grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        'b b'
+        'd c'
+		'a a'
+        'f f';}
+	#content .palace .contlist .delacroix_con li:nth-of-type(1) p{font-size: 1.3rem;}
+
+	
+
+}
+
+
+

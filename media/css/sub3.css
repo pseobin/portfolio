@@ -1,0 +1,51 @@
+#content{width: 100%;background: rgba(0, 0, 0, .9); color: #fff;}
+#content>p{font-size: 1.2rem; line-height: 2.5rem; width: 80%; margin: 0 auto; text-align: center; padding: 200px 0;}
+
+.container{position: relative; overflow: hidden; width: 100%; height: 100vh;}
+.sidebar {height: 100%; width: 60%; position: absolute; top: 0;left: 0; transition: transform 0.5s ease-in-out;}
+.sidebar div{background: rgba(0, 0, 0, .5);}
+.sidebar div strong{font-size: 1.5rem; font-weight: 900; padding: 0 0 100px;text-align: center;  line-height: 3rem;}
+.sidebar div p{font-size: 1rem; line-height: 2rem; font-weight: 100; margin: 0 130px; text-align:center; }
+  
+.sidebar > div{height: 100%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff;}
+  
+.main-slide {height: 100%; position: absolute; top: 0; left: 60%; width: 40%; transition: transform 0.5s ease-in-out;}
+.main-slide div img{width: 100%; height: 100%; object-fit: cover; object-position: center;}
+
+  
+.main-slide > div {background-repeat: no-repeat; background-size: cover; background-position: center center; height: 100%; width: 100%; }
+  
+button { background-color: #fff; border: none; color: #b66c36; cursor: pointer; font-size: 16px; padding: 15px;}
+
+.container .controls button {position: absolute;left: 60%;top: 20%; z-index: 10;}
+.container .controls .down-button {transform: translateX(-100%); border-top-left-radius: 5px; border-bottom-left-radius: 5px;}
+.container .controls .up-button { transform: translateY(-100%); border-top-right-radius: 5px; border-bottom-right-radius: 5px;}
+
+#content .palace_con{padding: 150px 0;}
+#content .palace_con p{font-size: 1.3rem; font-weight: 600; text-align: center; margin: 0 100px 50px;}
+#content .palace_con ul{display: flex; justify-content: space-around;}
+#content .palace_con ul li img{width: 100%; height: auto; object-fit: cover; object-position: center;}
+#content .palace_con ul li .btn{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    color: #fff;font-size: 5rem; transition: .3s ease-out;}
+#content .palace_con ul .popup_youtube{position: relative; padding-top: 30px;}    
+#content .palace_con ul .popup_youtube:hover .btn{color: red;}
+
+
+
+@media screen and (max-width:1160px) {
+    .sidebar div p{margin: 0 30px;}
+    
+}
+
+@media screen and (max-width:900px) {
+    .sidebar div strong{font-size: 1.3rem;}
+    #content .palace_con p{font-size: 1.1rem; font-weight: 400;}
+}
+
+@media screen and (max-width:768px) {
+    .sidebar div p{display: none;}
+    .sidebar div strong{font-size: 1rem;}
+    #content>p{font-size: 1rem;}
+    #content .palace_con ul{display: block;}
+    #content .palace_con ul li:nth-of-type(3){display: none;}
+ }
