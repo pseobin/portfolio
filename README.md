@@ -6,13 +6,13 @@ PC 전용 웹, 모바일 웹, 반응형 웹 입니다.<br>
 * 기업형 웹 프로젝트(해태제과)
     + https://serbin1116.mycafe24.com/
 
-* REAT SPA 프로젝트(기상청)
+* REACT SPA 프로젝트(기상청)
     + https://react-project-91975.web.app
 
 * 반응형 웹 프로젝트(루브르 박물관)
     + https://serbin1116.mycafe24.com/media/
 
-* 프로필 밒 포트폴리오 링크
+* 프로필 및 포트폴리오 링크
     + https://serbin1116.mycafe24.com/profile/
 
 
