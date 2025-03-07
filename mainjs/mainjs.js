@@ -23,7 +23,7 @@ function gallery_change(){
   $('.mbutton').css('background','#ccc'); //버튼 모두불꺼
   $('.mbutton').css('width','16px');
   $('.btn'+cnt).css('background','#EC2B84');//자신 버튼만 불켜 
-  $('.btn'+cnt).css('width','30px');
+  $('.btn'+cnt).css('width','40px');
   
   $(".gallery li span").css("top", 480).css("opacity", 0);
   $(".gallery .link" + cnt)
