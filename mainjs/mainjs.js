@@ -117,20 +117,44 @@ if(onoff==false){
 
 //about 처리코드 
 
-$('.about .about_btn li:eq(0) a').css('filter','grayscale(0)');
-$('.about_left ul li:eq(0)').css('border-radius','15px');
+let scalevalue = 0.5;
+let leftvalue = 50;
+const finalLeftValue = 32; // 최종적으로 고정될 왼쪽 위치 (%)
+const scrollDistance = 600; // 스크롤해야 할 거리
 
-$('.about .about_btn li a').click(function(e){
-    e.preventDefault();
-    var ind = $(this).index('.about .about_btn li a');  // 0~3
-    //console.log(ind);
-    $('.cube_box .slide_cube').css('transform','translateZ(-450px) rotate3d(0,1,0,'+ (ind*-90) +'deg)');
-    $('.about .about_btn li a').css('filter','grayscale(0)');
-    $(this).css('filter','grayscale(100%)');
-    $('.about_left ul li').css('border-radius','15px');
-    $(this).parent().css('border-radius','15px');
-   
+$(window).on('scroll', function() {
+    var scroll = $(window).scrollTop();
+    let esgtop = $('#content .about').offset().top;
+
+    if (scroll > esgtop - 600) {
+        // 배경 이미지 스케일 계산
+        scalevalue = 0.5 + ((scroll - (esgtop - 600)) / 1000);
+        if (scalevalue < 1.1) {
+            $('#content .about .about_wrap .bg').css('transform', 'scale(' + scalevalue + ')');
+        }
+
+        // 제목 위치 계산
+        let scrollProgress = Math.min((scroll - (esgtop - 600)) / scrollDistance, 1);
+        leftvalue = 50 - (50 - finalLeftValue) * scrollProgress;
+
+     
+    }
 });
+
+// $('.about .about_btn li:eq(0) a').css('filter','grayscale(0)');
+// $('.about_left ul li:eq(0)').css('border-radius','15px');
+
+// $('.about .about_btn li a').click(function(e){
+//     e.preventDefault();
+//     var ind = $(this).index('.about .about_btn li a');  // 0~3
+//     //console.log(ind);
+//     $('.cube_box .slide_cube').css('transform','translateZ(-450px) rotate3d(0,1,0,'+ (ind*-90) +'deg)');
+//     $('.about .about_btn li a').css('filter','grayscale(0)');
+//     $(this).css('filter','grayscale(100%)');
+//     $('.about_left ul li').css('border-radius','15px');
+//     $(this).parent().css('border-radius','15px');
+   
+// });
 
 
 //porduct top 영역
@@ -213,21 +237,21 @@ cnt2++;
  $('.recruit_bottom ul li:eq('+ (cnt2-1) +')').addClass('current'); //현재 열린 li만 클래스 추가
 
 if(cnt2==1){
-$('.recruit_bottom .img02').animate({top:[450,'easeOutQuad']},600).clearQueue();
- $('.recruit_bottom .img03').animate({top:[500,'easeOutQuad']},600).clearQueue();
- $('.recruit_bottom .img04').animate({top:[550,'easeOutQuad']},600).clearQueue(); 
+$('.recruit_bottom .img02').animate({left:[1070,'easeOutQuad']},450).clearQueue();
+ $('.recruit_bottom .img03').animate({left:[1180,'easeOutQuad']},450).clearQueue();
+ $('.recruit_bottom .img04').animate({left:[1290,'easeOutQuad']},450).clearQueue(); 
 }else if(cnt2==2){
-$('.recruit_bottom .img02').animate({top:[50,'easeOutQuad']},600).clearQueue();
- $('.recruit_bottom .img03').animate({top:[500,'easeOutQuad']},600).clearQueue();
- $('.recruit_bottom .img04').animate({top:[550,'easeOutQuad']},600).clearQueue();
+$('.recruit_bottom .img02').animate({left:[110,'easeOutQuad']},450).clearQueue();
+ $('.recruit_bottom .img03').animate({left:[1290,'easeOutQuad']},450).clearQueue();
+ $('.recruit_bottom .img04').animate({left:[1400,'easeOutQuad']},450).clearQueue();
 }else if(cnt2==3){
-$('.recruit_bottom .img02').animate({top:[50,'easeOutQuad']},600).clearQueue();
- $('.recruit_bottom .img03').animate({top:[100,'easeOutQuad']},600).clearQueue();
- $('.recruit_bottom .img04').animate({top:[550,'easeOutQuad']},600).clearQueue();
+$('.recruit_bottom .img02').animate({left:[110,'easeOutQuad']},450).clearQueue();
+ $('.recruit_bottom .img03').animate({left:[220,'easeOutQuad']},450).clearQueue();
+ $('.recruit_bottom .img04').animate({left:[1290,'easeOutQuad']},450).clearQueue();
 }else if(cnt2==4){
-  $('.recruit_bottom .img02').animate({top:[50,'easeOutQuad']},600).clearQueue();
- $('.recruit_bottom .img03').animate({top:[100,'easeOutQuad']},600).clearQueue();
- $('.recruit_bottom .img04').animate({top:[150,'easeOutQuad']},600).clearQueue();
+  $('.recruit_bottom .img02').animate({left:[110,'easeOutQuad']},450).clearQueue();
+ $('.recruit_bottom .img03').animate({left:[220,'easeOutQuad']},450).clearQueue();
+ $('.recruit_bottom .img04').animate({left:[330,'easeOutQuad']},450).clearQueue();
 }
 
 if(cnt2==imageCount2)cnt2=0;
@@ -244,25 +268,25 @@ $('.recruit_bottom ul li').removeClass('current');
 $(this).parent().addClass('current');   
 
 if($(this).is('.buttonMenu01')){  //첫번째 버튼에 마우스 오버되면
-    $('.recruit_bottom .img02').animate({top:[450,'easeOutQuad']},600).clearQueue();
+    $('.recruit_bottom .img02').animate({left:[1070,'easeOutQuad']},450).clearQueue();
     //$('.eventSlideMenu .img02').animate({left:350},450,'easeOutQuad').clearQueue();
-    $('.recruit_bottom .img03').animate({top:[500,'easeOutQuad']},600).clearQueue();
-    $('.recruit_bottom .img04').animate({top:[550,'easeOutQuad']},600).clearQueue();
+    $('.recruit_bottom .img03').animate({left:[1180,'easeOutQuad']},450).clearQueue();
+    $('.recruit_bottom .img04').animate({left:[1290,'easeOutQuad']},450).clearQueue();
     cnt2=1;
 }else if($(this).is('.buttonMenu02')){//두번째 버튼에 마우스 오버되면
-    $('.recruit_bottom .img02').animate({top:[50,'easeOutQuad']},600).clearQueue();
-    $('.recruit_bottom .img03').animate({top:[500,'easeOutQuad']},600).clearQueue();
-    $('.recruit_bottom .img04').animate({top:[550,'easeOutQuad']},600).clearQueue();
+    $('.recruit_bottom .img02').animate({left:[110,'easeOutQuad']},450).clearQueue();
+    $('.recruit_bottom .img03').animate({left:[1180,'easeOutQuad']},450).clearQueue();
+    $('.recruit_bottom .img04').animate({left:[1290,'easeOutQuad']},450).clearQueue();
     cnt2=2;
 }else if($(this).is('.buttonMenu03')){
-    $('.recruit_bottom .img02').animate({top:[50,'easeOutQuad']},600).clearQueue();
-    $('.recruit_bottom .img03').animate({top:[100,'easeOutQuad']},600).clearQueue();
-    $('.recruit_bottom .img04').animate({top:[550,'easeOutQuad']},600).clearQueue();
+    $('.recruit_bottom .img02').animate({left:[110,'easeOutQuad']},450).clearQueue();
+    $('.recruit_bottom .img03').animate({left:[220,'easeOutQuad']},450).clearQueue();
+    $('.recruit_bottom .img04').animate({left:[1290,'easeOutQuad']},450).clearQueue();
     cnt2=3;
 }else if($(this).is('.buttonMenu04')){
-    $('.recruit_bottom .img02').animate({top:[50,'easeOutQuad']},700).clearQueue();
-    $('.recruit_bottom .img03').animate({top:[100,'easeOutQuad']},700).clearQueue();
-    $('.recruit_bottom .img04').animate({top:[150,'easeOutQuad']},700).clearQueue();
+    $('.recruit_bottom .img02').animate({left:[110,'easeOutQuad']},450).clearQueue();
+    $('.recruit_bottom .img03').animate({left:[220,'easeOutQuad']},450).clearQueue();
+    $('.recruit_bottom .img04').animate({left:[330,'easeOutQuad']},450).clearQueue();
     cnt2=0;
 }
 

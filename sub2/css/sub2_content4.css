@@ -8,14 +8,13 @@
 .product{width:100%; margin: 50px auto;}
 
 
-#content .search{width: 1400px; height: 50px; border-radius: 50px; background: #FEF4F6;
-    border: 3px solid #EC2B84;  margin:0 auto; position: relative; overflow: hidden; padding: 10px 0;} 
-#content .search #search_text{width: 900px; margin-left: 50px; border: 0; background: #FEF4F6; 
+#content .search{width: 1400px; height: 50px; border-bottom: 3px solid #EC2B84;
+     margin:50px auto; position: relative; overflow: hidden; padding: 10px 0;} 
+#content .search #search_text{width: 900px; margin-left: 50px; border: 0; 
          font-size: 30px; color: #EC2B84; margin-top: 8px; outline: 0;}
 #content .search .btn{width: 40px; height: 40px; background: url(../images/search.png);
-            text-indent: -1000%; overflow: hidden; border: 0; position: absolute; top:13px ;right: 70px;  } 
-#content .search .btn_all{color: #EC2B84; background: #FEF4F6;
-     border: 2px solid #EC2B84; border-radius: 20px; padding: 10px; position: absolute; top: 12px; right: 140px; }
+            text-indent: -1000%; overflow: hidden; border: 0; cursor: pointer; position: absolute; top:13px ;right: 70px;  } 
+#content .search .btn_all{font-size: 1.8rem; font-weight: 700; cursor: pointer;  border: 0; background: #fff; color: #EC2B84;  padding: 10px; position: absolute; top: 12px; right: 140px; }
 
 /* 제품 리스트 */
 .product_list{box-sizing: border-box;}
