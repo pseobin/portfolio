@@ -126,7 +126,7 @@
     height: 100vh; width: 100%; z-index: 2;}
 #content .about .about_wrap .bg{width: 100%; height: 100%; background:url(../images/about_bg4.png) no-repeat center;
     background-size: cover; transform: scale(0.5); transition: transform 0.1s ease-out; z-index: -1;}
-#content .about .about_wrap .title{height: 400px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+#content .about .about_wrap .title{height: 400px; position: absolute; top: 55%; left: 50%; transform: translate(-50%, -50%);
     text-align: center; color: #fff; z-index: 3; transition: transform 0.1s ease-out;}
 
 #content .about .about_wrap .title .more{width: 50px; height: 50px; border-radius:25px; overflow: hidden;
