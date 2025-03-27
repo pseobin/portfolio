@@ -115,48 +115,6 @@ if(onoff==false){
 });
 
 
-//about 처리코드 
-
-let scalevalue = 0.5;
-let leftvalue = 50;
-const finalLeftValue = 32; // 최종적으로 고정될 왼쪽 위치 (%)
-const scrollDistance = 600; // 스크롤해야 할 거리
-
-$(window).on('scroll', function() {
-    var scroll = $(window).scrollTop();
-    let esgtop = $('#content .about').offset().top;
-
-    if (scroll > esgtop - 600) {
-        // 배경 이미지 스케일 계산
-        scalevalue = 0.5 + ((scroll - (esgtop - 600)) / 1000);
-        if (scalevalue < 1.1) {
-            $('#content .about .about_wrap .bg').css('transform', 'scale(' + scalevalue + ')');
-        }
-
-        // 제목 위치 계산
-        let scrollProgress = Math.min((scroll - (esgtop - 600)) / scrollDistance, 1);
-        leftvalue = 50 - (50 - finalLeftValue) * scrollProgress;
-
-     
-    }
-});
-
-// $('.about .about_btn li:eq(0) a').css('filter','grayscale(0)');
-// $('.about_left ul li:eq(0)').css('border-radius','15px');
-
-// $('.about .about_btn li a').click(function(e){
-//     e.preventDefault();
-//     var ind = $(this).index('.about .about_btn li a');  // 0~3
-//     //console.log(ind);
-//     $('.cube_box .slide_cube').css('transform','translateZ(-450px) rotate3d(0,1,0,'+ (ind*-90) +'deg)');
-//     $('.about .about_btn li a').css('filter','grayscale(0)');
-//     $(this).css('filter','grayscale(100%)');
-//     $('.about_left ul li').css('border-radius','15px');
-//     $(this).parent().css('border-radius','15px');
-   
-// });
-
-
 //porduct top 영역
 
 
@@ -217,6 +175,46 @@ function partnerMove(){
     });
 
 
+    //about 처리코드 
+
+let scalevalue = 0.5;
+let leftvalue = 50;
+const finalLeftValue = 32; // 최종적으로 고정될 왼쪽 위치 (%)
+const scrollDistance = 600; // 스크롤해야 할 거리
+
+$(window).on('scroll', function() {
+    var scroll = $(window).scrollTop();
+    let esgtop = $('#content .about').offset().top;
+
+    if (scroll > esgtop - 600) {
+        // 배경 이미지 스케일 계산
+        scalevalue = 0.5 + ((scroll - (esgtop - 600)) / 1000);
+        if (scalevalue < 1.1) {
+            $('#content .about .about_wrap .bg').css('transform', 'scale(' + scalevalue + ')');
+        }
+
+        // 제목 위치 계산
+        let scrollProgress = Math.min((scroll - (esgtop - 600)) / scrollDistance, 1);
+        leftvalue = 50 - (50 - finalLeftValue) * scrollProgress;
+
+     
+    }
+});
+
+// $('.about .about_btn li:eq(0) a').css('filter','grayscale(0)');
+// $('.about_left ul li:eq(0)').css('border-radius','15px');
+
+// $('.about .about_btn li a').click(function(e){
+//     e.preventDefault();
+//     var ind = $(this).index('.about .about_btn li a');  // 0~3
+//     //console.log(ind);
+//     $('.cube_box .slide_cube').css('transform','translateZ(-450px) rotate3d(0,1,0,'+ (ind*-90) +'deg)');
+//     $('.about .about_btn li a').css('filter','grayscale(0)');
+//     $(this).css('filter','grayscale(100%)');
+//     $('.about_left ul li').css('border-radius','15px');
+//     $(this).parent().css('border-radius','15px');
+   
+// });
 
 
 //RECRUIT 처리코드
